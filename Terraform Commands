@@ -1,0 +1,42 @@
+===============================
+Terraform CLI Commands
+===============================
+
+Core Workflow
+----------------
+terraform init       - Initialize working directory and download providers
+terraform plan       - Preview changes before applying
+terraform apply      - Apply changes to reach desired state
+terraform destroy    - Remove all managed infrastructure
+terraform validate   - Check configuration syntax
+
+Formatting & Cleanup
+------------------------
+terraform fmt        - Format .tf files to canonical style
+terraform taint      - Mark a resource for recreation
+terraform untaint    - Remove taint from a resource
+
+State & Output Management
+----------------------------
+terraform show       - Display current state or saved plan
+terraform output     - Show output values
+terraform state      - Advanced state file operations
+terraform refresh    - Sync state with real infrastructure
+
+Debugging & Exploration
+--------------------------
+terraform console    - Interactive shell for evaluating expressions
+terraform graph      - Generate dependency graph (Graphviz format)
+
+Workspace & Module Management
+-------------------------------
+terraform workspace  - Manage multiple environments
+terraform get        - Download referenced modules
+terraform import     - Bring existing resources under Terraform control
+
+Authentication & Remote Backends
+-----------------------------------
+terraform login      - Authenticate with Terraform Cloud
+terraform logout     - Remove stored credentials
+
+Tip: Use 'terraform plan -out=tfplan' and 'terraform apply tfplan' for safer deployments.
